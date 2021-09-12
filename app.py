@@ -109,9 +109,9 @@ def home():
 def api_pd():
     results = []
     r = random.randint(1,4)
-    for period_cramp in period_cramps:
-        if period_cramps['id'] == r:
-            results.append(period_cramps)
+    for pdc in period_cramps:
+        if pdc['id'] == r:
+            results.append(pdc)
 
     # Use the jsonify function from Flask to convert our list of
     # Python dictionaries to the JSON format.
